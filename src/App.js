@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-import Button from './Button'
+import Toggle from './Toggle'
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
-        <Button>Toggle</Button>
+        <Toggle />
       </header>
     </div>
   )
