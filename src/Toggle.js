@@ -1,5 +1,4 @@
 import React from 'react'
-import './Toggle.css'
 import Button from './Button'
 
 class Toggle extends React.Component {
