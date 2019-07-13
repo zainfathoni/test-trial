@@ -1,8 +1,8 @@
 import { configure, shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import { render, cleanup, fireEvent } from '@testing-library/react'
 import React from 'react'
 import Toggle from './Toggle'
+// import Toggle from './ToggleHooks'
 
 configure({ adapter: new Adapter() })
 
@@ -17,21 +17,5 @@ describe('Test Toggle using Enzyme', () => {
 
     expect(wrapper.state().toggle).toBe(true)
     expect(wrapper.find('span').prop('children')).toBe('On')
-  })
-})
-
-describe.skip('Test Toggle using React Testing Library', () => {
-  afterEach(cleanup)
-
-  it('render Button component', () => {
-    const { getByText, queryByText } = render(<Toggle />)
-
-    expect(getByText('Off')).toBeDefined()
-    expect(queryByText('On')).toBeNull()
-
-    fireEvent.click(getByText('Toggle'))
-
-    expect(getByText('On')).toBeDefined()
-    expect(queryByText('Off')).toBeNull()
   })
 })
