@@ -1,3 +1,4 @@
 {
-  "terminal.integrated.fontSize": 20
+  "window.zoomLevel": 2,
+  "workbench.panel.defaultLocation": "right"
 }
