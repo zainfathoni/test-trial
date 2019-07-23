@@ -7,7 +7,7 @@ import Toggle from './Toggle'
 configure({ adapter: new Adapter() })
 
 describe('Test Toggle using Enzyme', () => {
-  it('shallow render Button component', () => {
+  it('shallow render Toggle component', () => {
     const wrapper = shallow(<Toggle />)
 
     expect(wrapper.state().toggle).toBe(false)

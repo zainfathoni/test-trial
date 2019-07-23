@@ -6,7 +6,7 @@ import Toggle from './ToggleHooks'
 describe('Test Toggle using React Testing Library', () => {
   afterEach(cleanup)
 
-  it('render Button component', () => {
+  it('render Toggle component', () => {
     const { getByText, queryByText } = render(<Toggle />)
 
     expect(getByText('Off')).toBeDefined()
